@@ -1,0 +1,179 @@
+<parameters>
+    <parameter>
+        <key>TIPREGLA</key>
+        <value>2</value>
+    </parameter>
+    <parameter>
+        <key>NPERSREGLA</key>
+        <value>6489650</value>
+    </parameter>
+    <parameter>
+        <key>MULRED</key>
+        <value>1</value>
+    </parameter>
+    <parameter>
+        <key>INDFINAL</key>
+        <value>P</value>
+    </parameter>
+    <parameter>
+        <key>CUENTADV</key>
+        <value>00814149670001048506</value>
+    </parameter>
+    <parameter>
+        <key>TIPOFIRMA</key>
+        <value>I</value>
+    </parameter>
+</parameters>
+
+
+<parameters>
+    <parameter>
+        <key>TIPREGLA</key>
+        <value>1</value>
+    </parameter>
+    <parameter>
+        <key>NPERSREGLA</key>
+        <value>6489650</value>
+    </parameter>
+    <parameter>
+        <key>IMPORTE</key>
+        <value>20</value>
+    </parameter>
+    <parameter>
+        <key>DIVISA</key>
+        <value>EUR</value>
+    </parameter>
+    <parameter>
+        <key>TIPPERIODO</key>
+        <value>S</value>
+    </parameter>
+    <parameter>
+        <key>INDPERIODO</key>
+        <value>1</value>
+    </parameter>
+    <parameter>
+        <key>INDFINAL</key>
+        <value>P</value>
+    </parameter>
+    <parameter>
+        <key>CUENTADV</key>
+        <value>00814149670001048506</value>
+    </parameter>
+    <parameter>
+        <key>TIPOFIRMA</key>
+        <value>I</value>
+    </parameter>
+</parameters>
+
+
+
+"configuration":{ 
+    "product":"calp",
+    "operation":"altaCuenta",
+    "title":"Contratación",
+    "subtitle":[ 
+ 
+    ],
+    "productName":"Ahorro Expansión",
+    "productSubName":[ 
+ 
+    ],
+    "steps":[ 
+       { 
+          "name":"titularity",
+          "moduleConfig":[ 
+             { 
+                "name":"ip.codServicio",
+                "value":"KC7552",
+                "type":"param"
+             },
+             { 
+                "name":"ip.datosAdicionales",
+                "value":"#LANG#0000800000143",
+                "type":"param"
+             },
+             { 
+                "name":"ip.hasIP",
+                "value":"true",
+                "type":"param"
+             },
+             { 
+                "name":"ip.transactionName",
+                "value":"DVAC",
+                "type":"param"
+             },
+             { 
+                "name":"hasOtherTitulars",
+                "value":"true",
+                "type":"param"
+             },
+             { 
+                "name":"ip.codProducto",
+                "value":"DV 00036",
+                "type":"param"
+             }
+          ]
+       },
+       { 
+          "name":"confirmation",
+          "moduleConfig":[ 
+             { 
+                "name":"confirm.register.prodCode",
+                "value":"DV 00036",
+                "type":"param"
+             },
+             { 
+                "name":"confirm.register.type",
+                "value":"DV",
+                "type":"param"
+             },
+             { 
+                "name":"confirm.register.description",
+                "value":"Ahorro expansion",
+                "type":"param"
+             },
+             { 
+                "name":"confirm.parameter.INDFINAL",
+                "value":"P",
+                "type":"param"
+             },
+             { 
+                "name":"confirm.parameter.TIPOFIRMA",
+                "value":"I",
+                "type":"param"
+             },
+             { 
+                "name":"confirm.register.bank",
+                "value":"01",
+                "type":"param"
+             },
+             { 
+                "name":"confirm.register.prodType",
+                "value":"ContratoCALP",
+                "type":"param"
+             },
+             { 
+                "name":"confirm.register.center",
+                "value":"0052",
+                "type":"param"
+             },
+             { 
+                "name":"confirm.titleHolder.segment",
+                "value":"P",
+                "type":"param"
+             },
+             { 
+                "name":"confirm.titleHolder.numPers",
+                "value":"0",
+                "type":"param"
+             }
+          ]
+       },
+       { 
+          "name":"signature",
+          "moduleConfig":[ 
+ 
+          ]
+       }
+    ]
+ }
